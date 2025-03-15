@@ -11,7 +11,7 @@
     <title</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -44,13 +44,17 @@
             console.log(s)
 
             var ctx = canvas.getContext("2d");
-            //const o = 20; //offset
+            const o = 20; //offset to have space surroundig the square
             // moving to the starting point
             ctx.moveTo(o, o);
-                      
+            ctx.lineTo(o, o + s);
+            ctx.lineTo(o + s, o + s)
+            ctx.lineTo(o + s, o);
+            ctx.lineTo(o, o);
 
             // for placing text
             ctx.fillText(s, o + (s / 2), o + s)
+            ctx.fillText(s, o + 0, o + s / 2) 
             
             // to actually display the triangle
             ctx.stroke();

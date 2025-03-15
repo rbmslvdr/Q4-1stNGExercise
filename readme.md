@@ -18,7 +18,7 @@ Given 2 positive integers A and B, output a right triangle with 2 of the sides h
 ![](32.png)
 
 ## Procedure
-1. Use the UI template from the sample that displays square. Accessible through the canva presentation in week 2.
+1. Use the UI template from the sample that displays square. 
 2. Copy your favicon file to your repository and make sure it shows up.
 3. Place values on the meta tags, title and also place comments on your answers.
 4. From index.hbs form, place an action that will call**_ draw.hbs and use the post method._**: Note: They are inside the views folder.
